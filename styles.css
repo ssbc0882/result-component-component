@@ -67,7 +67,7 @@ svg {
   border-radius: 2rem;
   box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.1);
   padding: 2.5rem;
-  height: 22rem;
+  height: 35rem;
 }
 
 .results,
@@ -90,15 +90,15 @@ svg {
 
 .result__score {
   text-align: center;
-  width: 8rem;
-  height: 8rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   background: linear-gradient(
     to bottom,
     var(--violet-blue),
     var(--persian-blue)
   );
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   margin: 1rem auto;
 }
 
@@ -113,7 +113,7 @@ svg {
   color: var(--white-text);
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin: 2rem 0 1.5rem 0;
 }
 
 /* summary section */
@@ -196,7 +196,7 @@ svg {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .results__container {
     padding: 0;
@@ -204,6 +204,14 @@ svg {
     flex-direction: column;
     border-radius: 0;
     min-height: 100vh;
+  }
+
+  .result__rank {
+    margin: 1.5rem 0 1rem 0;
+  }
+
+  .results p:last-of-type {
+    padding: 0 0.5rem;
   }
 
   .results,
@@ -218,5 +226,10 @@ svg {
 
   .results {
     border-radius: 0 0 2rem 2rem;
+  }
+
+  .attribution {
+    padding: 0;
+    margin: 0;
   }
 }
